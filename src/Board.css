@@ -29,6 +29,18 @@ body {
     transition-delay: 30ms;
 }
 
+@media (max-width: 767px) {
+    .square {
+        height: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .square {
+        height: 9px;
+    }
+}
+
 .square:hover {
     background: #dce4fb;
 }
@@ -41,15 +53,17 @@ body {
     background: #ddd;
 }
 
-.square.x-square{
+.square.x-square {
     background: url(/img/x.png) center;
     background-repeat: no-repeat;
+    background-size: contain;
     cursor: pointer;
 }
 
-.square.o-square{
+.square.o-square {
     background: url(/img/o.png) center;
     background-repeat: no-repeat;
+    background-size: contain;
     cursor: pointer;
 }
 
@@ -57,10 +71,10 @@ body {
     border: green 2px solid;
 }
 
-.square.x-cursor{
+.square.x-cursor {
     cursor: url(/img/x.png) 16 16, auto;
 }
 
-.square.o-cursor{
+.square.o-cursor {
     cursor: url(/img/o.png) 16 16, auto;
 }
