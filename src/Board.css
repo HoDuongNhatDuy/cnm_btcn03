@@ -1,0 +1,66 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 150%;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 3.5%;
+    transition-delay: 30ms;
+}
+
+.square:hover {
+    background: #dce4fb;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.square.x-square{
+    background: url(/img/x.png) center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.square.o-square{
+    background: url(/img/o.png) center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.square.win {
+    border: green 2px solid;
+}
+
+.square.x-cursor{
+    cursor: url(/img/x.png) 16 16, auto;
+}
+
+.square.o-cursor{
+    cursor: url(/img/o.png) 16 16, auto;
+}
